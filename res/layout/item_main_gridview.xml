@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="88dp"
+android:background="@drawable/gv_item_bg" > 
+	<TextView   
+		android:id="@+id/ItemText" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="20dip"
+		android:textSize="16sp"
+		android:textColor="#FFFFFF" /> 
+	<TextView
+		android:id="@+id/ItemLetter" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/ItemText"
+		android:gravity="center_horizontal"
+		android:textSize="12sp"
+		android:textColor="#FFFFFF"/> 
+</RelativeLayout>

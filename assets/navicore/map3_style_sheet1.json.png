@@ -1,0 +1,377 @@
+{
+	"formatVersion": 1,
+
+	"_comment":	"The color in this file is in format ARGB.",
+
+	"class-DEFAULT": {
+		"map": {
+			"textSizeFactor":	1.7,
+			"isBuildingOpaque": false,
+			"__COMMENT_visibleLabels": "possble values: NONE, ALL, locationName|roadName|railwayStation|airport|dock|subwayStation|community|school|hospital|park|hotel|seeingSite|toilet|gasStation|parkingLot|trafficLight|bank|chinaPost|McDonald|KFC|subwayExit|restaurant|shop|entertainment|building|others",
+			"visibleLabels":	"gasStation|trafficLight|roadName|railwayStation|airport|dock|toilet|gasStation|parkingLot",
+			"maxElevErectingRoadName":	0.0,
+			"drawPolygons":	true,
+			"highestBuildingZoom": 3.0,
+
+			"color": {
+				"background":		"ff000000",
+				"backgroundLines":	"ff000000",
+
+				"roadOutline":	{
+					"minor":			"00000000",
+					"local":			"ff242323",
+					"arterial":			"ff242323",
+					"highway":			"ff000000"
+				},
+				"lines": {
+					"minor":			"ff303030",	 
+					"local":			"ff404040",	 
+					"arterial":			"ff404040",	 
+					"highway":			"ffe17e1a",	 
+					"railway":			"ffe17e1a",
+					"subway":			"ff000000",
+					"nationalBorder":	"ff000000",
+					"provinceBorder":	"ff000000",
+					"ferryLine":		"ff000000",
+					"water":			"ff000000"	 
+				},
+				"polygons":	{
+						"water":				"ff000000",	 
+						"land":					"ff000000",	 
+						"greenLand":			"ff000000",	 
+						"undergroundBuilding":	"ff000000",
+						"building":				"00000001",	 
+						"buildingWall":			"00000001",
+						"zone":					"ff000000",
+						"unknown":				"ff000000"
+				},
+
+				"fineBuilding":		"ff000000",
+
+				"subwayOutline":	"ff000000",
+				"subways": [ "ffC0C0C0", "ffE6002D", "ffB72F8C", "ffF6785D", "ff915833", "ffCD8426", "ffFA60A1", "ff671280", "ff865B8F", "ff00908C", "ff5DBD41", "ff2D479A" ],
+
+				"tmcs":	{
+					"unknown":	"ff000000",
+					"light":	"ff000000",
+					"medium":	"00FD8A09",
+					"heavy":	"ff000000"
+				},
+
+				"labels": {
+					"default":				"ffebeff0",
+					"parkLabel":			"ffebeff0",
+					"townNameLabel":		"ffebeff0",
+					"overpassName":			"ffebeff0",	 
+					"overpassNameOutline":	"ff000000",
+					"oceanName":			"ffebeff0",
+					"continentName":		"ffebeff0",
+					"countryName":			"ffebeff0",
+					"cityZoneLowLevel":		"ffebeff0",
+					"subwayExitName":		"ff20ed5e",
+					"cityZoneHighLevel":	"ffebeff0"
+				},
+				"roadNameOutlines":	{
+					"highway":	"ff000000",	  
+					"arterial":	"ff000000",	  
+					"local":	"ff000000",	  
+					"minor":	"ff000000"
+				},
+				"roadName":		   "ffebeff0",
+				"erectRoadName":   "ffe7aee8",	  
+				"highwayNumName":  "ffebeff0",
+				"expressNumName":  "ffffffff"
+			},
+			
+			"lineWidth": {
+				"minor":	0.8,
+				"local":	1.2,
+				"arterial":	1.8,
+				"highway":	1.5,
+				"railway":	0.5,
+				"subway":	0.2,
+				"nationalBorder":	0.4,
+				"provinceBorder":	0.3,
+				"ferryLine"		:	0.5,
+				"water":	0.5
+			},
+			
+			"roadSideWidthFactors": {
+				"minor":	0.5,
+				"local":	1.0,
+				"arterial":	1.0,
+				"highway":	1.0
+			}
+		},
+
+		"route":{
+			"drawArrow":	true,
+			"width": {
+				"normal": 1.5,
+				"tmc"	: 1.5
+			},
+			"outlineWidthFactor": {
+				"normal": 6.0,
+				"tmc"	: 6.0
+			},
+			"arrowIntervalFactor": {
+				"normal":	8.0,
+				"tmc":		8.0
+			},
+			
+			"outlineColor":	{
+				"normal": "ff00ffff",
+				"tmc"	: "ff00ffff"
+			},
+			"arrowColor":	{
+				"normal":	"ff5aeff6",
+				"tmc":		"ff5aeff6"
+			},
+			"trunkColor": {
+				"normal":	"ff5aeff6",
+				"tmc":	{
+					"unknown"	: "ff006FFF",
+					"light" 	: "ff006FFF",
+					"medium"	: "ffFFA700",
+					"heavy" 	: "ffCC0000",
+					"blocked"	: "ff006FFF",
+					"notCovered": "ff006FFF"
+				}
+			}
+		}
+	},
+	
+	"class-night":{
+		"inherit": ["DEFAULT"],
+		"map":	{
+			"color": {
+				"background":		"ff231E1F",
+				"backgroundLines":	"ff606060",
+
+				"roadOutline":	{
+					"minor":			"ff141E24",
+					"local":			"ff1F1F1F",
+					"arterial":			"ff201B1D",
+					"highway":			"ff1D0F00"
+				},
+				"lines": {
+					"minor":			"ff3C3C3C",
+					"local":			"ff4C4C4C",
+					"arterial":			"ff826E32",
+					"highway":			"ffA0640A",
+					"railway":			"ff323232",
+					"subway":			"ff52697b",
+					"nationalBorder":	"ff646973",
+					"provinceBorder":	"ff464B55",
+					"ferryLine":		"ff8591cc",
+					"water":			"ff1C1E51"
+				},
+				"polygons":	{
+						"water":				"ff283241",
+						"land":					"ff333337",
+						"greenLand":			"ff18370A",
+						"undergroundBuilding":	"ff262626",
+						"building":				"5a404040",
+						"buildingWall":			"5a0F0F19",
+						"zone":					"ff333333",
+						"unknown":				"ffff00ff"
+				},
+
+				"fineBuilding":		"80345159",
+
+				"subwayOutline":	"aa345159",
+				"subways": ["ff646464", "ff640000", "ff820164", "ffB45032", "ff915833", "ffA45A11", "ffB4326E", "ff501264", "ff643C6E", "ff003D6B", "ff3CA01E", "ff132169"],
+
+				"tmcs":	{
+					"unknown":	"ffBABABA",
+					"light":	"ff42510E",
+					"medium":	"ff5C421D",
+					"heavy":	"ff623536"
+				},
+
+				"labels": {
+					"default":				"FFffffff",
+					"parkLabel":			"ff000000",
+					"townNameLabel":		"ff000000",
+					"overpassName":			"ffffffff",
+					"overpassNameOutline":	"ff000000",
+					"oceanName":			"ff000000",
+					"continentName":		"ff000000",
+					"countryName":			"ff000000",
+					"cityZoneLowLevel":		"ff000000",
+					"subwayExitName":		"ff000000",
+					"cityZoneHighLevel":	"ff000000"
+				},
+				"roadNameOutlines":	{
+					"highway":	"ff171717",
+					"arterial":	"ff171717",
+					"local":	"ff171717",
+					"minor":	"ff171717"
+				},
+				"roadName":		   "ffffffff",
+				"erectRoadName":   "ffffffff",
+				"highwayNumName":  "ffffffff",
+				"expressNumName":  "ffffffff"
+			},
+			"lineWidth": {
+				"minor":	1.0,
+				"local":	1.2,
+				"arterial":	1.0,
+				"highway":	1.0,
+				"railway":	0.3,
+				"subway":	0.6,
+				"nationalBorder":	0.4,
+				"provinceBorder":	0.3,
+				"ferryLine"		:	0.5,
+				"water":	0.5
+			},
+			"roadSideWidthFactors": {
+				"minor":	0.5,
+				"local":	0.75,
+				"arterial":	0.8,
+				"highway":	0.5
+			}
+		},
+		"route":{
+			"width": {
+				"normal": 7.0,
+				"tmc"	: 7.0
+			},
+			"outlineWidthFactor": {
+				"normal": 1.4,
+				"tmc"	: 1.4
+			},
+			"arrowIntervalFactor": {
+				"normal":	8.0,
+				"tmc":		8.0
+			},
+			"outlineColor":	{
+				"normal": "ff59f0f7",
+				"tmc"	: "ff59f0f7"
+			},
+			"arrowColor":	{
+				"normal":	"ffffff00",
+				"tmc":		"ffffff00"
+			},
+			"trunkColor": {
+				"normal":	"ff59f0f7",
+				"tmc":	{
+					"unknown"	: "ff006FFF",
+					"light" 	: "ff006FFF",
+					"medium"	: "ffFFA700",
+					"heavy" 	: "ffCC0000",
+					"blocked"	: "ff006FFF",
+					"notCovered": "ff006FFF"
+				}
+			}
+		}
+	},
+	
+	"class-navigation":	{
+		"inherit": ["DEFAULT"],
+		"map":	{
+			"textSizeFactor":	1.1,
+			"isBuildingOpaque":	false,
+			"visibleLabels":	"locationName|roadName|railwayStation|airport|dock|subwayStation|parkingLot|gasStation|trafficLight|chinaPost|KFC|McDonald|subwayExit|community|hospital|hotel|park|school|seeingSite|",
+			"maxElevErectingRoadName":	45.0,
+			"color": {
+				"fineBuilding":"ffffffff"
+				}
+		}
+	},
+
+	"class-night_navigation":	{
+		"inherit": ["night", "navigation"],
+		"map": {
+			"color": {
+				"fineBuilding":		"ff345159"
+			}
+		}
+	},
+
+
+	"class-route.weaker":	{
+		"inherit": ["DEFAULT"],
+		"route":{
+			"drawArrow":	false,
+			"outlineColor":	{
+				"normal": "ff666666",
+				"tmc"	: "ff666666"
+			},
+			"trunkColor": {
+				"normal":	"ff802020",
+				"tmc":{
+					"unknown"	: "ffBFF2FF",
+					"light" 	: "ff9DE89B",
+					"medium"	: "ffFFE879",
+					"heavy" 	: "ffDF897A",
+					"blocked"	: "ffBFF2FF",
+					"notCovered": "ffBFF2FF"
+				}
+			}
+		}
+	},
+		"class-satellite": {
+		"inherit": ["DEFAULT"],
+		"map": {
+			"drawPolygons":	false,
+
+			"color": {
+				"roadOutline":	{
+					"minor":			"50B2B2B2",
+					"local":			"50B2B2B2",
+					"arterial":			"50D9AE41",
+					"highway":			"50D97D21"
+				},
+				"lines": {
+					"minor":			"50ffffff",	 
+					"local":			"50FFFFE6",	 
+					"arterial":			"60FDD469",	 
+					"highway":			"70FFAC26",	 
+					"railway":			"60ffffff",
+					"subway":			"60ffffff",
+					"nationalBorder":	"709d9fa2",
+					"provinceBorder":	"70abaeb2",
+					"ferryLine":		"708591cc",
+					"water":			"609CC4E4"	
+				},
+
+				"fineBuilding":		"ffffffff",
+
+				"subwayOutline":	"c0ffffff",
+				"subways": ["c0C0C0C0", "c0E6002D", "c0B72F8C", "c0F6785D", "c0915833", "c0CD8426", "c0FA60A1", "c0671280", "c0865B8F", "c000908C", "c05DBD41", "c02D479A"],
+
+				"tmcs":	{
+					"unknown":	"ffBABABA",
+					"light":	"ff88B37F",
+					"medium":	"ffECB972",
+					"heavy":	"ffD96C6C"
+				},
+
+				"labels": {
+					"default":				"ffffffff",
+					"parkLabel":			"ff84f370",
+					"townNameLabel":		"fff7edc1",
+					"overpassName":			"FFffFFff",
+					"overpassNameOutline":	"ff70925a",
+					"oceanName":			"ff0c4da2",
+					"continentName":		"ff93545c",
+					"countryName":			"FFffFFff",
+					"cityZoneLowLevel":		"ffffffff",
+					"subwayExitName":		"ffffffff",
+					"cityZoneHighLevel":	"ddffffff"
+				},
+				"roadNameOutlines":	{
+					"highway":	"ffffc144",
+					"arterial":	"ffffc144",
+					"local":	"ffe8e188",
+					"minor":	"ffffffff"
+				},
+				"roadName":		   "cc000000",
+				"erectRoadName":   "ff525252",
+				"highwayNumName":  "ffffffff",
+				"expressNumName":  "ffffffff"
+			}
+		}
+	}
+}

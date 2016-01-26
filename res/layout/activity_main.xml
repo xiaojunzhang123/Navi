@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+android:background="@color/white"> 
+	<LinearLayout
+	    android:id="@+id/main_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:gravity="center_vertical|center_horizontal"
+	        android:textSize="17sp"
+	        android:textColor="#353535"
+	        android:text="Mapbar Navigation MOO SDK"/>
+	    <ImageView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:src="@drawable/line"/>
+	</LinearLayout>
+	<GridView
+	  android:id="@+id/GridView" 
+	  android:layout_width="fill_parent" 
+	  android:layout_height="fill_parent"
+	  android:layout_below="@id/main_title"
+	  android:numColumns="auto_fit" 
+	  android:horizontalSpacing="13dp" 
+	  android:verticalSpacing="13dp" 
+	  android:columnWidth="88dp" 
+	  android:stretchMode="columnWidth" 
+	  android:gravity="center">
+	</GridView> 
+	<TextView 
+	    android:id="@+id/tv_ver"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:textColor="#000000"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/other_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/body_bg_color"
+	android:paddingTop="10dp"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingBottom="10dp"
+	android:clickable="true"
+    >
+    <TextView 
+        android:id="@+id/other_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#33b5e5"
+        android:textSize="18sp"
+        android:text="详情"/>
+	<TextView
+	    android:id="@+id/other_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/other_detail"
+	    android:layout_marginRight="5dp"
+	    android:gravity="center_vertical"
+	    android:background="@color/body_bg_color"
+	    android:textColor="@color/black"
+	    android:singleLine="true"
+	    android:textSize="18sp"
+	/>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/laout_inverse"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#f7efef" >
+	
+<!--     title -->
+    <include 
+        android:id="@+id/inverse_title"
+        layout="@layout/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"/>
+	
+<!--     map -->
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/inverse_title"
+	    android:orientation="horizontal">
+    	<com.mapbar.moo.resource.DemoMapView
+			android:id="@+id/glView_inverse"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+    	<RelativeLayout
+			android:id="@+id/ol_zoom"
+			android:layout_width="wrap_content"
+			android:layout_height="100dip"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_marginBottom="20dip"
+			android:layout_marginRight="20dip"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+	
+			<ImageView
+				android:id="@+id/btn_zoom_in"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="放大"
+				android:layout_alignParentTop="true"
+				android:background="@drawable/btn_zoom_in"
+				android:clickable="true" />
+	
+			<ImageView
+				android:id="@+id/btn_zoom_out"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="缩小"
+				android:layout_alignParentBottom="true"
+				android:layout_marginTop="15dip"
+				android:background="@drawable/btn_zoom_out"
+				android:clickable="true" />
+
+		</RelativeLayout>
+    </RelativeLayout>
+    
+<!-- 	    span -->
+	<LinearLayout
+  		android:id = "@+id/inverse_span" 
+		android:layout_width="fill_parent"
+		android:layout_height="65dp"
+		android:paddingTop="10dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="10dp"
+  		android:layout_below="@id/inverse_title"
+  		android:background="@android:color/background_light">
+		<TextView 
+		    android:id="@+id/tv_latlon"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_weight="1"
+		    android:layout_marginRight="10dp"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:textColor="#000000"
+		    android:textSize="17dp"
+		    android:background="@drawable/text_border_black"/>
+		<TextView
+		    android:id="@+id/btn_inverse_search"
+		    android:layout_width="80dp"
+		    android:layout_height="40dp"
+		    android:background="@drawable/btn_bg"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:textColor="#ffffff"
+		    android:textSize="18dp"
+		    android:text="  计算   "/>
+    </LinearLayout>
+</RelativeLayout>
+
+

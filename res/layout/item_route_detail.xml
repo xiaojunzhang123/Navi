@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/item_parent"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:paddingBottom="6dip"
+	android:paddingLeft="4dip"
+	android:paddingTop="6dip" >
+
+	<TextView
+		android:id="@+id/route_detail_item_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignRight="@id/item_parent"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="4dip"
+		android:background="@drawable/sym_action_bus"
+		android:textColor="#ffffffff"
+		android:gravity="center" />
+
+	<TextView
+		android:id="@+id/route_detail_item_address"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_toRightOf="@id/route_detail_item_icon"
+		android:gravity="center_vertical|left"
+		android:textSize="16dip"
+		android:textColor="#ff000000"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/route_detail_item_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/route_detail_item_address"
+		android:layout_toRightOf="@id/route_detail_item_icon"
+		android:textColor="#ff6f1c20"
+		android:textStyle="bold"
+		android:textSize="16dip" />
+
+</RelativeLayout>

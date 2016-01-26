@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/laout_location"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#f7efef" >
+	
+<!--     title -->
+    <include 
+        android:id="@+id/location_title"
+        layout="@layout/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"/>
+	
+	<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/location_title"
+        android:layout_marginBottom="45dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+			
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="基站定位间隔：" />
+
+                <EditText
+                    android:id="@+id/cell_interval"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_bg"
+                    android:text="15000"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="GPS定位间隔：" />
+
+                    <EditText
+                        android:id="@+id/gps_interval"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_bg"
+                        android:text="15000"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:textSize="16dp"
+	                android:text="定位选择：" />
+                <TextView 
+                    android:id="@+id/local_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_icon"
+                    android:textColor="@color/black"
+                    android:text="混合定位"/>
+            </LinearLayout>
+			<LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:textSize="16dp"
+	                android:text="输出结果：" />
+                <TextView 
+                    android:id="@+id/export_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_icon"
+                    android:textColor="@color/black"
+                    android:text="简单结果"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:textColor="@color/black"
+	               android:textSize="16dp"
+	               android:text="逆地理信息：" />
+                <TextView
+                    android:id="@+id/inverse_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_icon"
+                    android:textColor="@color/black"
+                    android:text="返回"/>
+            </LinearLayout>
+			<LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:textSize="16dp"
+	                android:text="定位次数：" />
+                <TextView
+                    android:id="@+id/local_count"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:textSize="16dp"
+	                android:text="0"/>
+                <ProgressBar
+		            android:id="@+id/loader"
+		            style="?android:attr/progressBarStyle"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginLeft="5dp"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:visibility="gone" />
+            </LinearLayout>
+		    <TextView
+		        android:id="@+id/tv_location"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black"/>
+        </LinearLayout>
+        
+    </ScrollView>
+    <Button 
+        android:id="@+id/btn_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="开始定位"/>
+</RelativeLayout>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="100dp"
+android:background="@android:color/background_light" > 
+	<TextView   
+		android:id="@+id/tv_range" 
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentRight="true"
+		android:textSize="14dp"
+		android:textColor="#000000" /> 
+	<Button   
+		android:id="@+id/btn_inmap" 
+		android:layout_width="60dp"
+		android:layout_height="30dp"
+		android:layout_below="@id/tv_range"
+		android:layout_marginTop="5dp"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/btn_bottom_border_bg"
+		android:textColor="#000000" 
+		android:text="地图"/> 
+	<TextView   
+		android:id="@+id/tv_title" 
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/btn_inmap"
+		android:singleLine="true"
+		android:textSize="15dp"
+		android:textColor="#000000" /> 
+	<TextView   
+		android:id="@+id/tv_address" 
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_toLeftOf="@id/btn_inmap"
+		android:layout_below="@id/tv_title"
+		android:singleLine="true"
+		android:textSize="13dp"
+		android:textColor="#000000" /> 
+	<TextView   
+		android:id="@+id/tv_type" 
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_toLeftOf="@id/btn_inmap"
+		android:layout_below="@id/tv_address"
+		android:singleLine="true"
+		android:textSize="13dp"
+		android:textColor="#000000" /> 
+</RelativeLayout>

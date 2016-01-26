@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:id="@+id/bus_item"
+	android:background="@color/body_bg_color">
+	<RelativeLayout
+        android:id="@+id/layout_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+	    <ImageView
+	        android:id="@+id/iv_bus_segment_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"/>
+	   	<LinearLayout
+	        android:id="@+id/ll_bus_route_result"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dip"
+	        android:layout_marginRight="25dip"
+	        android:orientation="vertical">
+	        <TextView
+		        android:id="@+id/tv_bus_segment_detail"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black"
+		        android:textSize="15sp"
+		        android:gravity="center_vertical"
+		        android:layout_marginRight="5dip"/>
+	   	</LinearLayout>
+	   	<ImageButton
+            android:id="@+id/image_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_arrow" />
+	</RelativeLayout>
+</RelativeLayout>

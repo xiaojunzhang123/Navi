@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">MapbarSDKdemo</string>
+    <string name="data_size">数据大小: </string>
+    <string name="base_data">基础数据</string>
+    <string name="map_data">地图数据</string>
+    <string name="navi_data">导航数据</string>
+    <string name="camr_data">电子眼数据</string>
+        <!-- 定位类型 -->
+    <string-array name="loca_type">
+        <item>混合定位</item>
+        <item>GPS定位</item>
+        <item>基站定位</item>
+    </string-array>
+    <!-- 返回结果-->
+    <string-array name="res_type">
+        <item>简单结果</item>
+        <item>标准结果</item>
+        <item>详细结果</item>
+    </string-array>
+    <!-- 逆地理信息-->
+    <string-array name="inv_info">
+        <item>返回</item>
+        <item>不返回</item>
+    </string-array>
+</resources>

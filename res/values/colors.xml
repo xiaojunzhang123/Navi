@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="transparent">#00000000</color>
+	<color name="black">#ff000000</color>
+	<color name="white">#ffffffff</color>
+	<color name="body_bg_color">#fff2f2f2</color>
+	<color name="press_text">#ff33B5E5</color>
+	<!-- list item -->
+	<drawable name="press">#FF42CCFF</drawable>
+	<drawable name="group_normal">#ffffffff</drawable>
+	<drawable name="child_normal">#fff2f2f2</drawable>
+	<!-- route -->
+	<color name="list_item_select_bg">#FF42CCFF</color>
+	<color name="list_item_selected_bg">#33B5E5</color>
+	<color name="textview_hinttext_color">#EEC8C8C8</color>
+	<color name="text_gray">#FF5c5c5c</color>
+	<color name="text_red">#FF6f1c20</color>
+	<color name="routearaw">#ff1091d5</color>
+	<color name="routeline">#ff45236d</color>
+	<!--   灰色 -->
+  <color name="gray">#B8B8B8</color>
+    <!--item背景色    浅灰色 -->
+  <color name="lightgray">#ebebeb</color>
+</resources>

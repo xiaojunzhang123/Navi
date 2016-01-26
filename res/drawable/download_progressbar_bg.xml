@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+ <item
+  android:id="@android:id/background"
+  android:drawable="@drawable/download_progress_shouw" />
+  
+  <!--<item
+  android:id="@android:id/progress"
+  android:drawable="@drawable/download_progress_orang" />
+  
+  --> 
+  <item android:id="@android:id/progress">
+  
+  <clip>
+
+   <shape>
+
+    <corners
+
+     android:radius="2dip" />
+
+    <gradient
+
+     android:startColor="#33b5e5"
+
+     android:endColor="#F9F400" />
+
+   </shape>
+
+  </clip>
+  </item>
+  
+</layer-list> 
+

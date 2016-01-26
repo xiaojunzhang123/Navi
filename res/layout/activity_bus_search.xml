@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/body_bg_color"
+	android:orientation="vertical" >
+	<RelativeLayout 
+            android:id="@+id/rl_1_1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white">
+            <TextView 
+                android:id="@+id/nearby_search_condition_search"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="查询"/>
+            <EditText 
+                android:id="@+id/img_input_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@id/nearby_search_condition_search"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:background="@drawable/text_border_black"
+                android:hint="输入查询信息"/>
+        </RelativeLayout>
+		<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+			<RelativeLayout
+			    android:id="@+id/bus_search_page"
+				android:layout_width="fill_parent"
+				android:layout_height="45dp"
+				android:layout_alignParentBottom="true"
+				android:gravity="center"
+				android:visibility="gone">
+				<Button
+					android:id="@+id/prev_page"
+					android:layout_width="80dp"
+					android:layout_height="35dp"
+					android:layout_alignParentLeft="true"
+					android:layout_marginLeft="10dp"
+					android:visibility="visible"
+					android:background="@drawable/btn_bg"
+					android:text="上一页" />
+				<Button
+					android:id="@+id/next_page"
+					android:layout_width="80dp"
+					android:layout_height="35dp"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:visibility="visible"
+					android:background="@drawable/btn_bg"
+					android:text="下一页" />
+			</RelativeLayout>
+		    <ListView
+				android:id="@+id/sch_results"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_above="@id/bus_search_page"
+				android:cacheColorHint="#00000000"
+				android:background="#fff2f2f2" >
+				</ListView>
+	
+		</RelativeLayout>
+</LinearLayout>

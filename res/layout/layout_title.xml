@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_title"
+   android:layout_width="fill_parent"
+   android:layout_height="45dp"
+   android:orientation="horizontal"
+   android:background="#33b5e5">
+    <ImageView
+        android:id="@+id/iv_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_back_bg"/>
+    <TextView 
+   		android:id="@+id/tv_title_text"
+   		android:layout_width= "fill_parent"
+   		android:layout_height="40dp"
+        android:layout_centerInParent="true"
+		android:gravity = "center_horizontal|center_vertical"
+		android:textSize="20.0dip" 
+		android:textColor="#FFFFFF"
+		/>
+     <Button
+        android:id="@+id/iv_title_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_online_bg"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="在线"/>
+     <ImageView 
+         android:id="@+id/iv_mapview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="5dp"
+         android:layout_alignParentRight="true"
+         android:layout_centerInParent="true"
+         android:background="@drawable/btn_mapview_bg"
+         android:visibility="gone"
+        />
+</RelativeLayout>
+
+

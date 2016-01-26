@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/laout_mapview"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@android:color/darker_gray"
+	android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/tv_tip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:textSize="20dp"
+	    android:textColor="#000000"
+	    android:layout_gravity="center_horizontal"/>
+	<Button 
+	    android:id="@+id/bt_ok"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:layout_gravity="center_horizontal"
+	    android:text="确定"/>
+</LinearLayout>
+
